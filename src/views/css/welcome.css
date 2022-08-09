@@ -1,0 +1,53 @@
+#welcome_div {
+  display: flex;
+  width: 100%;
+}
+
+#welcome_div div {
+  width: 50%;
+  overflow: hidden;
+}
+
+#welcome_div div:first-child {
+  border-right: 1px solid white;
+}
+
+#welcome_div div h4 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+#welcome_div div form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#welcome_div div form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+#welcome_div div form input:focus {
+  outline: none;
+}
+
+#welcome_div div form input:focus::placeholder {
+  color: transparent;
+}
+
+#welcome_div div form input::placeholder {
+  color: white;
+}
+
+#welcome_div div ul {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 0;
+}

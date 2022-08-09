@@ -1,0 +1,19 @@
+body {
+  background-color: dimgray;
+  height: 100vh;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}

@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style
+            include css/reset.css
+            include css/style.css
+            include css/nickname.css
+            include css/welcome.css
+            include css/video.css
+        title Video Chat
+    body
+        header
+            h1 Video Chat
+        main
+            #nickname 
+                h4 Write your nickname
+                form
+                    input(placeholder="Nickname", required, type="text")
+            #welcome
+                #welcome_div
+                    div
+                        h4 참여 및 만들기
+                        form
+                            input(placeholder="room name", type="text", required)
+                    div
+                        h4 Open Rooms:
+                        ul
+            #mainRoom
+                #mainRoom_div
+                    #call
+                        #stream 
+                            video#myFace(autoplay, playsinline, width="400", height="400")
+                            video#peerFace(autoplay, playsinline, width="400", height="400")
+                        #controller
+                            div
+                                button#mute Mute
+                                button#camera Camera Off
+                            div
+                                select#cameras
+                    #room
+                        h3
+                        ul 
+                        form
+                            input(placeholder="message", required, type="text")
+                            button Send
+
+        script(src="/socket.io/socket.io.js") 
+        script(src="../public/js/app.js") 
+        script(src="../public/js/video.js")

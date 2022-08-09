@@ -1,0 +1,47 @@
+#mainRoom_div {
+  display: flex;
+}
+
+#call {
+  margin-right: 30px;
+}
+
+#stream {
+  display: flex;
+}
+
+#room ul {
+  height: 50vh;
+  background-color: white;
+  border-radius: 20px;
+  margin: 15px 0;
+  padding: 20px;
+}
+
+#room li {
+  margin-bottom: 8px;
+}
+
+#room h3 {
+  color: white;
+  font-size: 24px;
+}
+
+#room form input {
+  border-radius: 15px;
+  padding: 10px 8px;
+}
+
+#room form input:focus {
+  outline: none;
+}
+
+#room form input:focus::placeholder {
+  color: transparent;
+}
+
+#room form button {
+  padding: 10px 5px;
+  background-color: orange;
+  border: none;
+}

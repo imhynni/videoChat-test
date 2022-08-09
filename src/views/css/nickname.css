@@ -1,0 +1,31 @@
+#nickname h4 {
+  font-size: 30px;
+  color: white;
+}
+
+#nickname form {
+  display: flex;
+  flex-direction: column;
+}
+
+#nickname form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#nickname form input:focus {
+  outline: none;
+}
+
+#nickname form input:focus::placeholder {
+  color: transparent;
+}
+
+#nickname form input::placeholder {
+  color: white;
+}
